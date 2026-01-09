@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gesture Controlled Volume Control</title>
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, Arial;
+    background:#ffffff;
+    color:#333;
+}
+.header{
+    background:#1f6fdc;
+    color:#fff;
+    padding:18px;
+    font-size:24px;
+    text-align:center;
+    font-weight:600;
+}
+.main{
+    max-width:900px;
+    margin:30px auto;
+    text-align:center;
+}
+.panel{
+    border:2px solid #1f6fdc;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:25px;
+}
+.panel h3{
+    margin-top:0;
+    font-size:20px;
+    color:#1f6fdc;
+}
+.status{
+    margin:15px 0;
+    font-size:15px;
+}
+.badge{
+    padding:6px 14px;
+    border-radius:14px;
+    font-size:13px;
+    border:1px solid #1f6fdc;
+}
+.on{
+    background:#1f6fdc;
+    color:#fff;
+}
+.off{
+    background:#ffffff;
+    color:#1f6fdc;
+}
+button{
+    width:220px;
+    padding:12px;
+    margin:15px 10px;
+    font-size:15px;
+    border:2px solid #1f6fdc;
+    background:#1f6fdc;
+    color:#fff;
+    cursor:pointer;
+    border-radius:6px;
+}
+button:hover{
+    background:#ffffff;
+    color:#1f6fdc;
+}
+.video-section{
+    border:2px solid #1f6fdc;
+    border-radius:12px;
+    overflow:hidden;
+}
+.video-section img{
+    width:100%;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+Gesture Controlled Volume Control – User Interface
+</div>
+
+<div class="main">
+
+<div class="panel">
+    <h3>System Status</h3>
+
+    <div class="status">
+        Camera:
+        <span id="camStatus" class="badge off">OFF</span>
+    </div>
+
+    <div class="status">
+        Volume Control Mode:
+        <span class="badge on">HAND GESTURE</span>
+    </div>
+
+    <div>
+        <button onclick="startCamera()">Start Camera</button>
+        <button onclick="stopCamera()">Stop Camera</button>
+    </div>
+</div>
+
+<div class="video-section">
+    <img id="stream" src="">
+</div>
+
+</div>
+
+<script>
+function startCamera(){
+    document.getElementById("stream").src="/video";
+    let badge=document.getElementById("camStatus");
+    badge.innerText="ON";
+    badge.classList.remove("off");
+    badge.classList.add("on");
+}
+function stopCamera(){
+    fetch("/stop");
+    document.getElementById("stream").src="";
+    let badge=document.getElementById("camStatus");
+    badge.innerText="OFF";
+    badge.classList.remove("on");
+    badge.classList.add("off");
+}
+</script>
+
+</body>
+</html>
