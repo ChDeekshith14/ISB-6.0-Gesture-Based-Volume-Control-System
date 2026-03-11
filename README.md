@@ -98,21 +98,10 @@ The gesture is then mapped to the system’s volume level, and the volume is aut
 ---
 
 ## 📸 Screenshots
-🔧 Code Execution
+![image alt](https://github.com/ChDeekshith14/Gesture-Based-Volume-Control-System/blob/8ae2986e07168a81642e9903e1085ca6aa43bf8d/Screenshot%202026-03-12%20003528.png)
 
-(Add screenshot of the program running in terminal or IDE)
-
-images/code_execution.png
 🎥 Live Gesture Detection
-
-(Add screenshot showing webcam feed with hand landmarks)
-
-images/gesture_detection.png
-🔊 System Output
-
-(Add screenshot showing volume control working)
-
-images/output.png
+![image alt](https://github.com/ChDeekshith14/Gesture-Based-Volume-Control-System/blob/8ae2986e07168a81642e9903e1085ca6aa43bf8d/Screenshot%202026-03-12%20003430.png)
 
 ---
 
