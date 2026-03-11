@@ -52,7 +52,7 @@ The gesture is then mapped to the system’s volume level, and the volume is aut
 
 ---
 
-## ⚙️ System Architecture / Workflow
+## ⚙️ System Architecture
 
 - The system operates through the following workflow:
 - Webcam captures live video frames.
@@ -98,9 +98,11 @@ The gesture is then mapped to the system’s volume level, and the volume is aut
 ---
 
 ## 📸 Screenshots
+
 ![image alt](https://github.com/ChDeekshith14/Gesture-Based-Volume-Control-System/blob/8ae2986e07168a81642e9903e1085ca6aa43bf8d/Screenshot%202026-03-12%20003528.png)
 
 🎥 Live Gesture Detection
+
 ![image alt](https://github.com/ChDeekshith14/Gesture-Based-Volume-Control-System/blob/8ae2986e07168a81642e9903e1085ca6aa43bf8d/Screenshot%202026-03-12%20003430.png)
 
 ---
@@ -115,6 +117,6 @@ The gesture is then mapped to the system’s volume level, and the volume is aut
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 We sincerely thank Infosys Springboard Virtual Internship Program, mentors, and academic coordinators for their guidance and support throughout the internship.
